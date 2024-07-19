@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRR Hackathon - Interactively measure items using calibrated photography</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #distance {
+            font-size: 2em; /* Make the measurement text 3 times bigger */
+        }
+    </style>
+</head>
+<body>
+    <h1>TRR Hackathon - Interactively measure items using calibrated photography</h1>
+    <label for="fileInput">Load Silhouette:</label>
+    <input type="file" id="fileInput" accept=".json">
+    <br>
+    <label for="imageInput">Load Image:</label>
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <label for="calibrationInput">Load Calibration:</label>
+    <input type="file" id="calibrationInput" accept=".json">
+    <br>
+    <label for="snapToggle">Enable Snapping:</label>
+    <input type="checkbox" id="snapToggle" checked>
+    <br>
+    <canvas id="canvas"></canvas>
+    <p id="distance"></p>
+    <script src="app.js"></script>
+</body>
+</html>
